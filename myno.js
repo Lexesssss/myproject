@@ -11,13 +11,16 @@ document.querySelector(".close").addEventListener("click", function() {
 });
 
 document.getElementById("saveNote").addEventListener("click", function() {
+
     let title = document.getElementById("noteTitle").value;
     let desc = document.getElementById("noteDesc").value;
-    
+
     if (title.trim() === "" || desc.trim() === "") {
-        alert("Please fill in both fields!");
+        alert("Please fill in both ddfields!");
         return;
     }
+    notes.push({title: title, description: desc});
+    localStorage.setItem('notes', JSON.stringify(notes));
 
     let notesContainer = document.getElementById("notes");
 
