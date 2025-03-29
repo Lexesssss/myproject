@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="myno.css">
+    <title>My Notes</title>
+</head>
+<body>
+    
+    <header>
+        <h2 id="quicky-btn">Q U I C K Y</h2>
+        <nav>
+            <ul class="navbar">
+                <li><p>My Notes</p></li>
+                <li><a href="#news">Favorites</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button class="set">Settings ▼</button>
+            <div class="drop">
+                <a href="profile.html">Profile</a>
+                <a href="logg.html">Log Out</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="note-container">
+        <div id="addNoteCard">
+            <div class="plus-icon">+</div>
+            <p>Add new note</p>
+        </div>
+    </div>
+
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Add a new Note</h3>
+            <input type="text" id="noteTitle" placeholder="Title">
+            <textarea id="noteDesc" placeholder="Description"></textarea>
+            <button id="saveNote">Add Note</button>
+        </div>
+    </div>
+
+    <div id="notes"></div>
+    <script src="myno.js"></script>
+   
+
+</body>
+</html>

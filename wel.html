@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+ 
+        body {
+            background: url(nature.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+ 
+       
+        .about-icon {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 22px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+ 
+        .about-icon:hover {
+            color: #ddd;
+        }
+ 
+       
+        .box {
+            background: white;
+            padding: 100px;
+            border-radius: 25px;
+            width: 650px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+ 
+        .box:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+        }
+ 
+       
+        .tagline {
+            font-size: 36px;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #2C2C2C;
+        }
+ 
+       
+        .link {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            color: #4A90E2;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+ 
+        .link:hover {
+            color: #357ABD;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+ 
+   
+    <span class="about-icon" onclick="showAboutUs()">ⓘ</span>
+ 
+    <div class="box">
+        <div class="tagline">Welcome to Quicky - Where Your Thoughts Find a Home.</div>
+        <a href="newhome.html" class="link">Get Started →</a>
+    </div>
+ 
+    <script>
+        function showAboutUs() {
+            alert("About Us: AMBOT!");
+        }
+    </script>
+ 
+</body>
+</html>
